@@ -19,8 +19,14 @@ describe("Test for Explorer Controller", ()=>
     });
     test("4.Using apllyValidationInNumber with ExplorerController", ()=>
     {
-        const numberToValidate = ExplorerController.getValidation(5);
-        expect(numberToValidate).toBe("Fizz");
+        const numberToValidateInFizz = ExplorerController.getValidation(3);
+        expect(numberToValidateInFizz.trick).toBe("Fizz");
+        const numberToValidateInBuzz = ExplorerController.getValidation(5);
+        expect(numberToValidateInBuzz.trick).toBe("Buzz");
+        const numberToValidateInFizzBuzz = ExplorerController.getValidation(15);
+        expect(numberToValidateInFizzBuzz.trick).toBe("FizzBuzz");
+        const numberToValidateInScore = ExplorerController.getValidation(1);
+        expect(numberToValidateInScore.trick).toBe(1);
     })
 });
 
