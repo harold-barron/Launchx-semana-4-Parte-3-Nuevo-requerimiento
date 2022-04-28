@@ -17,6 +17,11 @@ describe("Test for Explorer Controller", ()=>
         const amountOfExplorers = ExplorerController.getExplorersAmonutByMission("node");
         expect(amountOfExplorers).toBe(10);
     });
+    test("4.Using apllyValidationInNumber with ExplorerController", ()=>
+    {
+        const numberToValidate = ExplorerController.getValidation(5);
+        expect(numberToValidate).toBe("Fizz");
+    })
 });
 
 
