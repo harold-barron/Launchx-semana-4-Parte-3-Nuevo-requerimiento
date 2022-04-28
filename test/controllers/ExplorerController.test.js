@@ -27,7 +27,7 @@ describe("Test for Explorer Controller", ()=>
         expect(numberToValidateInFizzBuzz.trick).toBe("FizzBuzz");
         const numberToValidateInScore = ExplorerController.getValidation(1);
         expect(numberToValidateInScore.trick).toBe(1);
-    })
+    });
 });
 
 
