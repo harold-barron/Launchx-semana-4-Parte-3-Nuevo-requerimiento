@@ -22,4 +22,9 @@ describe("Test to fizzbuzz", ()=>
         const scoreest = FizzbuzzService.applyValidationInExplorer("explorers.json","Woopa1");
         expect(scoreest.trick).toBe(scoreest.score);
     });
+    test("5. New Validation for FizzBuzz", () =>
+    {
+        const scoreClient = FizzbuzzService. applyValidationInNumber(3)
+        expect(scoreClient).toBe("Fizz");
+    })
 });
