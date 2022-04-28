@@ -24,7 +24,13 @@ describe("Test to fizzbuzz", ()=>
     });
     test("5. New Validation for FizzBuzz", () =>
     {
-        const scoreClient = FizzbuzzService. applyValidationInNumber(3)
-        expect(scoreClient).toBe("Fizz");
+        const scoreClientfizz = FizzbuzzService.applyValidationInNumber(3)
+        expect(scoreClientfizz.trick).toBe("Fizz");
+        const scoreClientbuzz = FizzbuzzService.applyValidationInNumber(5)
+        expect(scoreClientbuzz.trick).toBe("Buzz");
+        const scoreClientfizzbuzz = FizzbuzzService.applyValidationInNumber(15)
+        expect(scoreClientfizzbuzz.trick).toBe("FizzBuzz");
+        const scoreClientscore = FizzbuzzService.applyValidationInNumber(1)
+        expect(scoreClientscore.trick).toBe(1);
     })
 });
